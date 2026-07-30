@@ -1,24 +1,72 @@
 aid: lilith-games
 name: Lilith Games
-description: 'Lilith Games is a company surfaced as a portfolio company of idg-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Lilith Games (上海莉莉丝网络科技有限公司) is a Shanghai-headquartered video game developer
+  and publisher founded in 2013, known for globally distributed mobile and PC titles including Rise of
+  Kingdoms (万国觉醒), AFK Arena (剑与远征), AFK Journey (剑与远征：启程), Farlight 84 (远光84), Warpath (战火勋章),
+  Art of Conquest (剑与家园) and a portfolio of indie games. The company operates as a consumer game
+  publisher rather than an API platform: it publishes no public developer portal, API documentation, or
+  partner API program. Its public engineering surface is the LilithGames GitHub organization, which
+  open-sources backend and build infrastructure (Go networking and reverse-proxy tooling, build caching,
+  Perforce virtual file system work) rather than client SDKs for a Lilith API. Surfaced as a portfolio
+  company of IDG Capital.'
 url: https://raw.githubusercontent.com/api-evangelist/lilith-games/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://lilithimage.lilithcdn.com/allgames-official-web/lilith/pc/cn/favicon.ico
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - idg-capital
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Video Games
+- Game Development
+- Game Publishing
+- Mobile Games
+- Entertainment
+- China
 apis: []
+common:
+- type: DomainSecurity
+  url: security/lilith-games-domain-security.yml
+- type: Website
+  url: https://www.lilith.com/
+- type: About
+  url: https://www.lilith.com/us
+- type: Blog
+  url: https://www.lilith.com/news
+- type: GitHubOrganization
+  url: https://github.com/lilithgames
+- type: TermsOfService
+  url: https://www.lilith.com/termofservice
+- type: PrivacyPolicy
+  url: https://www.lilith.com/privacy
+- type: LLMsTxt
+  url: llms/lilith-games-llms.txt
+- type: WellKnown
+  url: well-known/lilith-games-well-known.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
