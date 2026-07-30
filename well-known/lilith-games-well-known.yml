@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for Lilith Games. The
+  company publishes no API, so apis.yml carries no baseURL and there are no
+  OpenAPI servers[] hosts; the corporate host www.lilith.com is the only base
+  host. lilithgames.com 301-redirects to www.lilith.com, so it resolves to the
+  same surface. Every /.well-known/ path returned a hard 404 (a control request
+  to a nonsense path also returned 404, confirming the host does not soft-404
+  into an SPA shell, so these are true negatives). No security.txt, no OIDC or
+  OAuth authorization-server metadata, no api-catalog, no ai-plugin.json.
+  The host does publish a real /llms.txt (200, text/plain, 4,470 bytes) — an
+  SEO-oriented LLM knowledge base — saved verbatim to llms/lilith-games-llms.txt.
+hosts:
+  - host: https://www.lilith.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 200
+        type: text/plain; charset=utf-8
+        file: ../llms/lilith-games-llms.txt
+non_resolving_hosts:
+  description: >-
+    Conventional developer/API/status/trust subdomains were probed and do not
+    resolve in DNS (curl exit 6, recorded here as absence-is-data).
+  hosts:
+    - developer.lilith.com
+    - open.lilith.com
+    - api.lilith.com
+    - status.lilith.com
+    - trust.lilith.com
