@@ -10,6 +10,17 @@ description: 'Lilith Games (上海莉莉丝网络科技有限公司) is a Shangh
   Perforce virtual file system work) rather than client SDKs for a Lilith API. Surfaced as a portfolio
   company of IDG Capital.'
 url: https://raw.githubusercontent.com/api-evangelist/lilith-games/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
