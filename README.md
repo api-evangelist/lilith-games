@@ -64,22 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lilith Games (上海莉莉丝网络科技有限公司) is a Shanghai-headquartered video game developer and publisher founded in 2013, known for globally distributed mobile and PC titles including Rise of Kingdoms (万国觉醒), AFK Arena (剑与远征), AFK Journey (剑与远征：启程), Farlight 84 (远光84), Warpath (战火勋章) and Art of Conquest (剑与家园).
+Lilith Games (上海莉莉丝网络科技有限公司) is a Shanghai-headquartered video game developer and publisher founded in 2013, known for globally distributed mobile and PC titles including Rise of Kingdoms (万国觉醒), AFK Arena (剑与远征), AFK Journey (剑与远征：启程), Farlight 84 (远光84), Warpath (战火勋章), Art of Conquest (剑与家园) and a portfolio of indie games. The company operates as a consumer game publisher rather than an API platform: it publishes no public developer portal, API documentation, or partner API program. Its public engineering surface is the LilithGames GitHub organization, which open-sources backend and build infrastructure (Go networking and reverse-proxy tooling, build caching, Perforce virtual file system work) rather than client SDKs for a Lilith API. Surfaced as a portfolio company of IDG Capital.
 
-Backed by: idg-capital
+**Areas:** Company · Consumer · Video Games · Game Development · Game Publishing · Mobile Games · Entertainment · China
 
-## API surface
+## Lilith Games on APIs.io
 
-Lilith Games is a consumer game publisher, not an API platform. As of the 2026-07-19 enrichment pass it publishes **no public API, developer portal, API documentation, or partner API program**. No `developer.`, `open.`, `api.`, `status.` or `trust.` subdomain resolves, and every `/.well-known/` discovery path returns a hard 404.
+Everything profiled for Lilith Games is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lilith-games/](https://apis.io/providers/lilith-games/)** — or go straight to one of the APIs or properties below.
 
-Its public engineering surface is the [LilithGames GitHub organization](https://github.com/lilithgames) — open-sourced backend and build infrastructure (Go networking and reverse-proxy tooling, build caching, Perforce virtual file system work) rather than client SDKs for a Lilith API.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Artifact | Method | Notes |
-|---|---|---|
-| `llms/lilith-games-llms.txt` | searched | Real published `/llms.txt` (200, 4,470 bytes), saved verbatim — an SEO-oriented LLM knowledge base |
-| `well-known/lilith-games-well-known.yml` | searched | `/.well-known/` probe index; all paths 404 (verified true negatives) |
-| `security/lilith-games-domain-security.yml` | probed | TLS 1.3, no HSTS, no DNSSEC, no CAA, SPF present, no DMARC |
+#### Security (1)
 
-Spec-dependent artifacts (OpenAPI, overlays, MCP, skills, conventions, errors, data model, scopes, authentication, sandbox, CLI, changelog) are **not applicable** — there is no API to ground them in. No vulnerability-disclosure program or trust center was found.
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lilith Games Domain Security](https://apis.io/security/lilith-games/lilith-games-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.lilith.com/)
+- [Blog](https://www.lilith.com/news)
+- [Terms of service](https://www.lilith.com/termofservice)
+- [Privacy policy](https://www.lilith.com/privacy)
+- [GitHub](https://github.com/lilithgames)
+
+## API Evangelist rating
+
+**Kin Score 10.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lilith-games/](https://apis.io/providers/lilith-games/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lilith Games: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lilith-games/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
